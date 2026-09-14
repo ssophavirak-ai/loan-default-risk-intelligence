@@ -1,0 +1,12 @@
+[
+  {
+    "class": "Good",
+    "count": 700,
+    "share": 0.7
+  },
+  {
+    "class": "Bad",
+    "count": 300,
+    "share": 0.3
+  }
+]

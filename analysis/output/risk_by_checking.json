@@ -1,0 +1,22 @@
+[
+  {
+    "checking_status": "A11",
+    "applications": 274,
+    "bad_rate": 0.4927
+  },
+  {
+    "checking_status": "A12",
+    "applications": 269,
+    "bad_rate": 0.3903
+  },
+  {
+    "checking_status": "A13",
+    "applications": 63,
+    "bad_rate": 0.2222
+  },
+  {
+    "checking_status": "A14",
+    "applications": 394,
+    "bad_rate": 0.1168
+  }
+]

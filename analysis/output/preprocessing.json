@@ -1,0 +1,11 @@
+{
+  "rows_input": 1000,
+  "columns_input": 21,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "categorical_features": 13,
+  "numeric_features": 7,
+  "target_definition": "Good = 1; Bad = 0",
+  "split": "75% stratified training / 25% stratified test",
+  "seed": 20260914
+}

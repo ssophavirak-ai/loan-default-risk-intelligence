@@ -1,0 +1,42 @@
+[
+  {
+    "feature": "credit_amount",
+    "mean_decrease_accuracy": 7.8634,
+    "mean_decrease_gini": 38.1054
+  },
+  {
+    "feature": "checking_status",
+    "mean_decrease_accuracy": 24.3144,
+    "mean_decrease_gini": 31.6442
+  },
+  {
+    "feature": "age_years",
+    "mean_decrease_accuracy": 6.8173,
+    "mean_decrease_gini": 31.5851
+  },
+  {
+    "feature": "duration_months",
+    "mean_decrease_accuracy": 15.2428,
+    "mean_decrease_gini": 29.6871
+  },
+  {
+    "feature": "purpose",
+    "mean_decrease_accuracy": 3.6806,
+    "mean_decrease_gini": 27.5212
+  },
+  {
+    "feature": "credit_history",
+    "mean_decrease_accuracy": 12.9866,
+    "mean_decrease_gini": 23.0871
+  },
+  {
+    "feature": "employment_since",
+    "mean_decrease_accuracy": 4.7318,
+    "mean_decrease_gini": 18.652
+  },
+  {
+    "feature": "savings_status",
+    "mean_decrease_accuracy": 6.225,
+    "mean_decrease_gini": 17.0315
+  }
+]

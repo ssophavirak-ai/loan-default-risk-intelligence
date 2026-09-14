@@ -1,0 +1,12 @@
+{
+  "headline": "Random forest is the operational champion: it has the strongest ranking performance while remaining within one cost point of the lowest-cost model (Random forest).",
+  "best_model": "Random forest",
+  "best_model_auc": 0.8085,
+  "bad_rate": 0.3,
+  "train_rows": 750,
+  "test_rows": 250,
+  "dataset_rows": 1000,
+  "key_risk_signals": ["Short-term or unestablished checking relationships", "Longer loan duration", "Low savings or no savings account", "Higher requested credit amount"],
+  "lowest_cost_model": "Random forest",
+  "decision_note": "The dashboard uses a review-oriented threshold: a high predicted Bad probability routes the case to human review rather than an automatic decline."
+}

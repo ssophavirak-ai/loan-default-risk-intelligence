@@ -43,135 +43,96 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --primary: #2f6fed;
+  --primary-foreground: #ffffff;
+  --sidebar-primary: #18b6a4;
+  --sidebar-primary-foreground: #ffffff;
+  --chart-1: #18b6a4;
+  --chart-2: #2f6fed;
+  --chart-3: #7e57c2;
+  --chart-4: #ff6b5f;
+  --chart-5: #f5b942;
+  --radius: 0.85rem;
+  --background: #f6f8fb;
+  --foreground: #172033;
+  --card: #ffffff;
+  --card-foreground: #172033;
+  --popover: #ffffff;
+  --popover-foreground: #172033;
+  --secondary: #eff3f8;
+  --secondary-foreground: #4b5b71;
+  --muted: #f3f5f8;
+  --muted-foreground: #7b879a;
+  --accent: #edf2ff;
+  --accent-foreground: #234aaf;
+  --destructive: #ff6b5f;
+  --destructive-foreground: #ffffff;
+  --border: #e4e9f0;
+  --input: #dce3ec;
+  --ring: #2f6fed;
+  --sidebar: #172433;
+  --sidebar-foreground: #eef5fb;
+  --sidebar-accent: #223348;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255,255,255,.1);
+  --sidebar-ring: #18b6a4;
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
+  * { @apply border-border outline-ring/50; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground; font-family: "DM Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  h1, h2, h3, h4, h5, h6 { font-family: "Space Grotesk", "DM Sans", ui-sans-serif, system-ui, sans-serif; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), [type="button"]:not(:disabled), [type="submit"]:not(:disabled), a[href], select:not(:disabled), input:not(:disabled) { @apply cursor-pointer; }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
+  .sidebar { @apply fixed inset-y-0 left-0 z-50 flex w-[248px] -translate-x-full flex-col bg-[#172433] text-[#eef5fb] transition-transform duration-200 lg:translate-x-0; }
+  .sidebar-open { @apply translate-x-0 shadow-2xl; }
+  .nav-close { @apply rounded-lg p-1 text-[#73869e] transition-colors hover:bg-white/10 hover:text-white lg:hidden; }
+  .mobile-menu { @apply rounded-lg p-2 text-[#607086] hover:bg-white hover:shadow-sm lg:hidden; }
+  .brand-mark { @apply flex h-9 w-9 items-center justify-center rounded-xl bg-[#18b6a4] text-white shadow-[0_6px_18px_rgba(24,182,164,.25)]; }
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8794a7]; }
+  .nav-item { @apply flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-[13px] font-medium text-[#9eacc0] transition-all duration-150 hover:bg-white/[0.06] hover:text-white; }
+  .nav-item-active { @apply bg-[#223348] text-white shadow-[inset_3px_0_0_#18b6a4]; }
+  .hero-grid { @apply grid overflow-hidden rounded-[24px] border border-[#dce6ef] bg-white shadow-[0_18px_60px_rgba(30,55,90,.07)] xl:grid-cols-[1.35fr_.65fr]; }
+  .hero-copy { @apply p-7 sm:p-10 lg:p-12; }
+  .hero-insight { @apply relative flex min-h-[260px] flex-col justify-end overflow-hidden bg-[#dff7f3] p-7 sm:p-10; background-image: radial-gradient(circle at 88% 18%, rgba(255,255,255,.55), transparent 28%), linear-gradient(135deg, rgba(24,182,164,.03), rgba(47,111,237,.08)); }
+  .status-dot { @apply inline-block h-2 w-2 rounded-full bg-[#18b6a4] shadow-[0_0_0_4px_rgba(24,182,164,.12)]; }
+  .button-dark { @apply h-10 gap-2 rounded-xl bg-[#172433] px-4 text-xs font-semibold text-white shadow-[0_6px_18px_rgba(23,36,51,.16)] transition-transform active:scale-[.98] hover:bg-[#223348]; }
+  .button-blue { @apply h-10 gap-2 rounded-xl bg-[#2f6fed] px-4 text-xs font-semibold text-white shadow-[0_7px_18px_rgba(47,111,237,.2)] transition-transform active:scale-[.98] hover:bg-[#245fd4]; }
+  .text-button { @apply inline-flex h-10 items-center gap-1 rounded-xl px-2 text-xs font-semibold text-[#53647a] transition-colors hover:text-[#2f6fed]; }
+  .metric-card { @apply border-[#e7ecf2] bg-white shadow-[0_9px_28px_rgba(30,55,90,.045)]; }
+  .metric-icon { @apply flex h-9 w-9 items-center justify-center rounded-xl; }
+  .metric-icon-blue { @apply bg-[#eaf0ff] text-[#2f6fed]; }
+  .metric-icon-coral { @apply bg-[#fff0ee] text-[#ff6b5f]; }
+  .metric-icon-purple { @apply bg-[#f1ecff] text-[#7e57c2]; }
+  .metric-icon-teal { @apply bg-[#e4f8f4] text-[#18a594]; }
+  .dashboard-card { @apply border-[#e5eaf0] bg-white shadow-[0_9px_30px_rgba(30,55,90,.045)]; }
+  .card-header { @apply flex flex-row items-start justify-between gap-4 p-6 pb-2; }
+  .dashboard-card [data-slot="card-title"] { @apply text-[17px] font-semibold tracking-[-.025em] text-[#253248]; }
+  .badge-soft { @apply border-0 bg-[#eef3ff] text-[#4562ad]; }
+  .badge-neutral { @apply border-0 bg-[#f3f5f8] text-[#77869a]; }
+  .badge-coral { @apply border-0 bg-[#fff0ee] text-[#bb5a4d]; }
+  .badge-teal { @apply border-0 bg-[#e7f8f4] text-[#168373]; }
+  .chart-wrap { @apply mt-5 w-full; }
+  .metric-mini { @apply rounded-xl bg-[#f8fafc] p-3; }
+  .insight-note { @apply flex gap-2 rounded-xl border border-[#f5ddd8] bg-[#fff8f7] p-3 text-xs leading-5 text-[#846b65]; }
+  .explain-step { @apply rounded-2xl border border-[#e9edf2] bg-[#fbfcfd] p-4; }
+  .step-number { @apply flex h-7 w-7 items-center justify-center rounded-lg bg-[#edf2ff] text-[10px] font-bold text-[#2f6fed]; }
+  .section-banner { @apply flex items-center justify-between gap-5 overflow-hidden rounded-[22px] bg-[#172433] p-7 shadow-[0_12px_30px_rgba(23,36,51,.13)] sm:p-9; background-image: radial-gradient(circle at 85% 10%, rgba(47,111,237,.22), transparent 34%), radial-gradient(circle at 95% 90%, rgba(24,182,164,.16), transparent 30%); }
+  .score-card { @apply min-h-[500px] border-[#dce5f0] bg-white shadow-[0_12px_34px_rgba(30,55,90,.06)]; }
+  .field-control { @apply mt-1 w-full rounded-xl border border-[#dce3ec] bg-white px-3 py-2.5 text-sm text-[#334155] outline-none transition-all focus:border-[#2f6fed] focus:ring-4 focus:ring-[#eaf0ff]; }
+  .data-table { @apply min-w-full text-left text-xs text-[#758399]; }
+  .data-table th { @apply whitespace-nowrap bg-[#fbfcfd] px-6 py-3 font-semibold uppercase tracking-[.12em] text-[#9aa5b4]; }
+  .data-table td { @apply whitespace-nowrap border-t border-[#eef1f4] px-6 py-4; }
+  .table-pill { @apply inline-flex rounded-full px-2.5 py-1 text-[10px] font-semibold; }
+  .table-pill-coral { @apply bg-[#fff0ee] text-[#ba5a4d]; }
+  .table-pill-teal { @apply bg-[#e7f8f4] text-[#168373]; }
+  .method-card { @apply min-h-[108px] rounded-2xl border border-[#e9edf2] bg-[#fbfcfd] p-4 transition-colors hover:border-[#cbd8f8] hover:bg-[#f8faff]; }
+  .tech-chip { @apply rounded-full border border-[#e4eaf1] bg-white px-3 py-1.5; }
+}
 
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
