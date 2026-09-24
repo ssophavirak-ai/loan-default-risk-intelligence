@@ -38,6 +38,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.manus-logs/
 
 # Runtime data
 pids
@@ -80,24 +81,23 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache
 .cache
 .parcel-cache
 
 # Next.js build output
 .next
 
-# Nuxt.js build / generate output
+# Nuxt.js build output
 .nuxt
 
-# Gatsby files
+# Gatsby build output
 .cache/
 
 # Storybook build outputs
 .out
 .storybook-out
 
-# Temporary folders
 tmp/
 temp/
 
@@ -106,9 +106,7 @@ temp/
 *.sqlite
 *.sqlite3
 
-# Webdev artifacts (checkpoint zips, migrations, etc.)
+# Local project/deployment metadata
 .webdev/
-
-# Manus version file (auto-generated, not part of source)
-client/public/__manus__/version.json
 .project-config.json
+client/public/__manus__/
